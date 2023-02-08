@@ -8,7 +8,7 @@
 				</ion-card-header>
 
 				<ion-card-content>
-					{{ item.content }}
+					{{ item.body }}
 				</ion-card-content>
 			</ion-card>
 		</div>
@@ -38,7 +38,7 @@ export default {
 		};
 	},
 	mounted() {
-		axios.get("http://localhost:8000/api/posts")
+		axios.get("https://jsonplaceholder.typicode.com/posts")
 			.then((response) => {
 				this.items = response.data;
 				console.log(this.items);
