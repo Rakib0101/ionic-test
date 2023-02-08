@@ -28,7 +28,15 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/Tab3Page.vue')
       }
     ]
-  }
+  },
+  {
+    path: '/sign-in',
+    component: () => import('@/views/SignIn.vue')
+  },
+  {
+    path: '/sign-up',
+    component: () => import('@/views/SignUp.vue')
+  },
 ]
 
 const router = createRouter({

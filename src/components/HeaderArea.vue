@@ -1,7 +1,7 @@
 <template>
     <div class="header">
         <div class="header-left">
-            <LogoLarge />
+            <logo-small />
         </div>
         <div class="header-right">
             <span>
@@ -12,14 +12,14 @@
     </div>
 </template>
 <script>
-import LogoLarge from "./Icons/LogoLarge.vue";
 import Avatar from "../../public/assets/avatar-40.png";
 import BellIcon from "./Icons/BellIcon.vue";
+import LogoSmall from './Icons/LogoSmall.vue';
 
  export default{
     components:{
-        LogoLarge,
         BellIcon,
+        LogoSmall,
     },
     data(){
         return{
