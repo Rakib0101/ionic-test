@@ -1,11 +1,21 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
-import TabsPage from '../views/TabsPage.vue'
+import TabsPage from '../views/TabsPage.vue';
+import SignIn from '../views/SignIn.vue';
+import SignUp from '../views/SignUp.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     redirect: '/tabs/tab1'
+  },
+  {
+    path: '/sign-in',
+    component: SignIn
+  },
+  {
+    path: '/sign-up',
+    component: SignUp
   },
   {
     path: '/tabs/',
@@ -28,14 +38,6 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/Tab3Page.vue')
       }
     ]
-  },
-  {
-    path: '/sign-in',
-    component: () => import('@/views/SignIn.vue')
-  },
-  {
-    path: '/sign-up',
-    component: () => import('@/views/SignUp.vue')
   },
 ]
 
